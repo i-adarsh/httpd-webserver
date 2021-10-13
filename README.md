@@ -13,7 +13,8 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 >Installing required packages
 >
 >```
->sudo yum install >git httpd -y
+>sudo yum install 
+>git httpd -y
 >```
 >
 >Cloning GitHub Repository
@@ -70,7 +71,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 >sudo yum install certbot -y
 >```
 >Installing Dependencies
-
+>
 >```
 >sudo yum install python-certbot-apache -y
 >```
