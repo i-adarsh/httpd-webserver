@@ -1,12 +1,10 @@
-# Foobar
+# Configure httpd webserver with Route 53 and SSL
 
-Foobar is a Python library for dealing with word pluralization.
+In this video, I have shown that how we can configure an httpd web server on AWS EC2 instance and then connect it with Route 53 and then enable SSL
 
 ## Video Link
 
 [![CodeOps](https://img.youtube.com/vi/wRGM0t-yDro/0.jpg)](https://www.youtube.com/watch?v=wRGM0t-yDro)
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 # Installation and Configuring httpd Server
 
@@ -46,15 +44,48 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 >http://you_instance_ip
 >```
 >
+>![alt text](https://github.com/i-adarsh/httpd-webserver/blob/main/ip.png?raw=true)
+>
 
 # Setup Route 53
 
+>Go to Route 53 in AWS and Click on DNS Management
+>![alt text](https://github.com/i-adarsh/httpd-webserver/blob/main/select_dns.png?raw=true)
+>
+>Enter your domain name
+>![alt text](https://github.com/i-adarsh/httpd-webserver/blob/main/enter_domain_name.png?raw=true)
+>
+> Your Dashboard will look like this
+>
+>![alt text](https://github.com/i-adarsh/httpd-webserver/blob/main/Screenshot%202021-10-14%20at%2012.22.58%20AM.png?raw=true)
+>
+> Now we have to create a record for attaching our instance with the domain
+>
+>![alt text](https://github.com/i-adarsh/httpd-webserver/blob/main/create_record.png?raw=true)
+>
+> Insert record for your domain
+>
+>![alt text](https://github.com/i-adarsh/httpd-webserver/blob/main/insert_A.png?raw=true)
+>
+> Create an alias for our domain
+>
+>![alt text](https://github.com/i-adarsh/httpd-webserver/blob/main/insert_www.png?raw=true)
+>
+> Your final Dashboard will look like this
+>
+>![alt text](https://github.com/i-adarsh/httpd-webserver/blob/main/final.png?raw=true)
+>
+> Replace your Nameservers of the domain with the newly obtained nameservers
+>
+>![alt text](https://github.com/i-adarsh/httpd-webserver/blob/main/freenom_register.png?raw=true)
+>
 >Now access the webserver with your domain
+>
 >```
 >http://codeopsindia.ml
 >```
-
-
+>![alt text](https://github.com/i-adarsh/httpd-webserver/blob/main/not_secure.png?raw=true)
+>
 
 # Configuring SSL
 
@@ -114,11 +145,17 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
  >   SSLCertificateKeyFile /etc/letsencrypt/live/codeopsindia.ml/privkey.pem
 > </VirtualHost>
 >```
+>Now access the webserver with your domain
+>
+>```
+>https://codeopsindia.ml
+>```
+>![alt text](https://github.com/i-adarsh/httpd-webserver/blob/main/secure.png?raw=true)
+>
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+>[Adarsh Kumar](https://github.com/i-adarsh)
+>
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+>[MIT](https://choosealicense.com/licenses/mit/)
