@@ -4,7 +4,7 @@ In this video, I have shown that how we can configure an httpd web server on AWS
 
 ## Video Link
 
->![alt text](https://github.com/i-adarsh/httpd-webserver/blob/main/thumb.png?raw=true)
+>[![CodeOps](https://img.youtube.com/vi/9HNPMq8V2ms/0.jpg)](https://www.youtube.com/watch?v=9HNPMq8V2ms)
 
 # Installation and Configuring httpd Server
 
