@@ -108,7 +108,7 @@ In this video, I have shown that how we can configure an httpd web server on AWS
 >
 >Create a configuration file for your domain
 >```
->sudo vim /etc/httpd/conf.d/codeops.ml.conf
+>sudo vim /etc/httpd/conf.d/codeopsindia.ml.conf
 >```
 >Edit accordingly and copy the below lines in this file
 >```
